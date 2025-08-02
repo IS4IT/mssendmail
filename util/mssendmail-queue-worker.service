@@ -1,0 +1,13 @@
+[Unit]
+Description=MS Sendmail (Sending mails with graph api)
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/mssendmail-worker
+Restart=always
+User=mssendmail
+Group=mssendmail
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,14 @@
+[project]
+name = "microsoft-sendmail"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "msal>=1.33.0",
+    "python-dotenv>=1.1.1",
+]
+
+[project.scripts]
+mssendmail = "mailqueue.queue_writer:main"
+mssendmail-worker = "mailqueue.queue_worker:main"
