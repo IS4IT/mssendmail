@@ -1,6 +1,6 @@
 # mssendmail
 
-** Microsoft Graph-based sendmail replacement with a persistent queue for Linux**
+**Microsoft Graph-based sendmail replacement with a persistent queue for Linux**
 
 mssendmail provides a drop-in sendmail interface for sending emails via the Microsoft Graph API.
 It stores emails in a local queue and processes them asynchronously via systemd-managed background worker.
